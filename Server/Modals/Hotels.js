@@ -42,7 +42,7 @@ const HotelsSchema=new mongoose.Schema({
         max:5
     },
     rooms:{
-        type:{String}
+        type:[String]
     },
     cheapestPrice:{
         type:Number,
@@ -52,6 +52,7 @@ const HotelsSchema=new mongoose.Schema({
         type:Boolean,
         default:false
     }
-})
+},
+{timestamps:true})
 
 export default mongoose.model("Hotels",HotelsSchema)
