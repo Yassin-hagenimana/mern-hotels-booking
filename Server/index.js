@@ -30,7 +30,7 @@ app.use(cors())
 app.use(cookieParser())
 app.use(express.json())
 
-app.use("/api/authentication",AuthRoutes)
+app.use("/api/auth",AuthRoutes)
 app.use("/api/hotels",HotelsRoutes)
 app.use("/api/rooms",RoomsRoutes)
 app.use("/api/users",UsersRoutes)
