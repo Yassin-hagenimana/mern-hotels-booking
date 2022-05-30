@@ -15,6 +15,21 @@ const UserSchema=new mongoose.Schema({
             'Please add a valid email',
           ],
     },
+    country:{
+        type:String,
+        required:true
+    },
+    img:{
+        type:String
+    },
+    phone:{
+         type:String,
+         required:true
+    },
+    city:{
+        type:String,
+        required:true
+    },
     password:{
         type:String,
         required:true
