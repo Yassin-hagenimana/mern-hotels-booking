@@ -1,77 +1,120 @@
 export const userInputs = [
     {
-      id: 1,
+      id: "username",
       label: "Username",
       type: "text",
-      placeholder: "john_doe",
+      placeholder: "Hagenimana",
     },
     {
-      id: 2,
-      label: "Name and surname",
-      type: "text",
-      placeholder: "John Doe",
-    },
-    {
-      id: 3,
+      id: "email",
       label: "Email",
-      type: "mail",
-      placeholder: "john_doe@gmail.com",
+      type: "email",
+      placeholder: "yassin@gmail.com",
     },
     {
-      id: 4,
+      id: "phone",
       label: "Phone",
       type: "text",
-      placeholder: "+1 234 567 89",
+      placeholder: "+250 7866 217 07",
     },
     {
-      id: 5,
+      id: "password",
       label: "Password",
       type: "password",
     },
     {
-      id: 6,
-      label: "Address",
+      id: "city",
+      label: "City",
       type: "text",
-      placeholder: "Elton St. 216 NewYork",
+      placeholder: "Kigali",
     },
     {
-      id: 7,
+      id: "country",
       label: "Country",
       type: "text",
-      placeholder: "USA",
+      placeholder: "Rwanda",
     },
   ];
-  
-  export const productInputs = [
+
+ export const hotelInputs=[
     {
-      id: 1,
-      label: "Title",
+      id: "name",
+      label: "Name",
       type: "text",
-      placeholder: "Apple Macbook Pro",
+      placeholder: "Marriot Hotel",
     },
     {
-      id: 2,
+      id: "type",
+      label: "Type",
+      type: "text",
+      placeholder: "Hotel",
+    },
+    {
+      id: "city",
+      label: "City",
+      type: "text",
+      placeholder: "Kigali",
+    },
+    {
+      id: "address",
+      label: "Address",
+      type: "text",
+      placeholder: "Kigali-Gasabo",
+    },
+    {
+      id: "distance",
+      label: "Distance from city center",
+      type: "text",
+      placeholder: "500",
+    },
+    {
+      id: "title",
+      label: "Title",
+      type: "text",
+      placeholder: "The best hotel",
+    },
+    {
+      id: "description",
       label: "Description",
       type: "text",
       placeholder: "Description",
     },
     {
-      id: 3,
-      label: "Category",
-      type: "text",
-      placeholder: "Computers",
-    },
-    {
-      id: 4,
+      id: "cheapestPrice",
       label: "Price",
       type: "text",
       placeholder: "100",
     },
+  
+  ]
+
+  export const roomInputs=[
     {
-      id: 5,
-      label: "Stock",
+      id: "title",
+      label: "Title",
       type: "text",
-      placeholder: "in stock",
+      placeholder: " 2 beds room",
     },
-  ];
+    {
+      id: "description",
+      label: "Description",
+      type: "text",
+      placeholder: "King size bed, 1 bathroom",
+    },
+    {
+      id: "price",
+      label: "Price",
+      type: "number",
+      placeholder: "100",
+    },
+
+    {
+      id: "maxPeople",
+      label: "Max people",
+      type: "number",
+      placeholder: "2",
+    },
+    
+  ]
+  
   
