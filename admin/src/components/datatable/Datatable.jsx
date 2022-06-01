@@ -13,6 +13,7 @@ import axios from "axios";
     useEffect(()=>{
       setList(data)
     },[data])
+    
      const handleDelete = async(id) => {
     try {
        await axios.delete(`/${path}/${id}`)
