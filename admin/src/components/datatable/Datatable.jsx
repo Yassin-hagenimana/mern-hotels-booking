@@ -48,7 +48,7 @@ import axios from "axios";
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
+       {path}
         <Link to={`/${path}/new`} className="link">
           Add New
         </Link>

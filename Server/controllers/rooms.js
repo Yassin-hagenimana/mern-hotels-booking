@@ -62,7 +62,7 @@ export const deleteRoom=async(req,res,next)=>{
 
 export const getRoom=async(req,res,next)=>{
     try {
-        const room= await Hotels.findById(req.params._id)
+        const room= await Rooms.findById(req.params._id)
           res.status(200).json(room)
       } catch (err) {
           next(err)
