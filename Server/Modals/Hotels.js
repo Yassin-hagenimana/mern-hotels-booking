@@ -1,4 +1,5 @@
 import mongoose from "mongoose"
+import {registerSchema} from "swaggiffy"
 const HotelsSchema=new mongoose.Schema({
 
     name:{
@@ -55,4 +56,5 @@ const HotelsSchema=new mongoose.Schema({
 },
 {timestamps:true})
 
+registerSchema("Hotels",HotelsSchema,{orm:'mongoose'})
 export default mongoose.model("Hotels",HotelsSchema)

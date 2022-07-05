@@ -1,4 +1,5 @@
 import mongoose from "mongoose"
+import {registerSchema} from "swaggiffy"
 const RoomSchema=new mongoose.Schema({
 
     title:{
@@ -22,5 +23,5 @@ const RoomSchema=new mongoose.Schema({
 {timestamps:true}
 
 )
-
+registerSchema("Room",RoomSchema,{orm:'mongoose'})
 export default mongoose.model("Room",RoomSchema)

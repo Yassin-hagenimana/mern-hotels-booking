@@ -1,4 +1,5 @@
 import express  from "express";
+import {registerDefinition} from "swaggiffy"
 import {deleteUser, getUser, getUsers, updateUser } from "../controllers/user.js";
 import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
 const router=express.Router()
@@ -23,5 +24,6 @@ router.get("/:_id",verifyUser,getUser)
 //get all Users
 router.get("/",verifyAdmin,getUsers)
 
+registerDefinition(router,{tags:'Users',mappedSchema:'User',basePath:'/api/users'})
 
 export default router

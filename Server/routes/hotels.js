@@ -1,4 +1,5 @@
 import express  from "express";
+import {registerDefinition} from "swaggiffy"
 import { countByCity, countByType, createHotel, deleteHotel, getHotel, getHotelRooms, getHotels, updateHotel }
  from "../controllers/hotels.js";
 import { verifyAdmin } from "../utils/verifyToken.js";
@@ -18,4 +19,5 @@ router.get("/countByCity",countByCity)
 router.get("/countByType",countByType)
 router.get("/room/:_id",getHotelRooms)
 
+registerDefinition(router,{tags:"Hotels",mappedSchema:"Hotels",basePath:"/api/hotels"})
 export default router

@@ -1,4 +1,5 @@
 import mongoose from "mongoose"
+import {registerSchema} from "swaggiffy"
 const UserSchema=new mongoose.Schema({
 
     username:{
@@ -43,5 +44,7 @@ const UserSchema=new mongoose.Schema({
 {timestamps:true}
 
 )
+
+registerSchema("User",UserSchema,{orm:'mongoose'})
 
 export default mongoose.model("User",UserSchema)

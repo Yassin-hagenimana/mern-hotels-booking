@@ -8,6 +8,7 @@ import AuthRoutes from "./routes/auth.js"
 import HotelsRoutes from "./routes/hotels.js"
 import RoomsRoutes from "./routes/rooms.js"
 import UsersRoutes from "./routes/users.js"
+import { Swaggiffy } from 'swaggiffy';
 
 const app=express()
 dotenv.config()
@@ -46,7 +47,9 @@ return res.status(errorStatus).json(({
     stack:err.stack
 }))
 })
-app.listen(8800,()=>{
+app.listen(5000,()=>{
     connect()
     console.log("Connected to backend!")
 })
+
+new Swaggiffy().setupExpress(app).swaggiffy()
